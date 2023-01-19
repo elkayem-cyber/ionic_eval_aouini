@@ -13,7 +13,7 @@ export class ProductFormPage implements OnInit {
 
   addProduct(form: NgForm){
 
-    this.http.post('http://localhost/marmiton/marmiton/src/product.php?action=add', JSON.stringify(form.value)).toPromise().then((response:any)=>{console.log(response) })
+    this.http.post('http://localhost:8888/marmiton/marmiton/src/product.php?action=add', JSON.stringify(form.value)).toPromise().then((response:any)=>{console.log(response) })
 
 
   }

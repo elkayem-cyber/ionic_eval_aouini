@@ -21,6 +21,18 @@ const routes: Routes = [
   {
     path: 'one-product/:id',
     loadChildren: () => import('./one-product/one-product.module').then( m => m.OneProductPageModule)
+  },
+  {
+    path: 'add-category',
+    loadChildren: () => import('./add-category/add-category.module').then( m => m.AddCategoryPageModule)
+  },
+  {
+    path: 'edit-category',
+    loadChildren: () => import('./edit-category/edit-category.module').then( m => m.EditCategoryPageModule)
+  },
+  {
+    path: 'list-category',
+    loadChildren: () => import('./list-category/list-category.module').then( m => m.ListCategoryPageModule)
   }
 ];
 @NgModule({
