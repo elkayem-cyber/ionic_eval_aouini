@@ -18,16 +18,16 @@ if ($_GET['action'] == 'edit') {
 if ($_GET['action'] == 'getall') {
   $query = $pdo->prepare("SELECT * FROM category");
   $query->execute();
-  $products = $query->fetchAll(PDO::FETCH_ASSOC);
-  echo json_encode($products);
+  $categorys = $query->fetchAll(PDO::FETCH_ASSOC);
+  echo json_encode($categorys);
 }
 
 if ($_GET['action'] == 'getone') {
   $data= json_decode(file_get_contents('php://input'), true);
   $query = $pdo->prepare("SELECT * FROM category WHERE id=:id");
   $query->execute($data);
-  $product = $query->fetch(PDO::FETCH_ASSOC);
-  echo json_encode($product);
+  $categorys = $query->fetch(PDO::FETCH_ASSOC);
+  echo json_encode($categorys);
 }
 
 
