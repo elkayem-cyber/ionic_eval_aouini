@@ -1,5 +1,5 @@
 import { NgModule } from '@angular/core';
-import { RouterModule, Routes } from '@angular/router';
+// import { RouterModule, Routes } from '@angular/router';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 
@@ -9,13 +9,13 @@ import { ListCategoryPageRoutingModule } from './list-category-routing.module';
 
 import { ListCategoryPage } from './list-category.page';
 
-const routes : Routes = [
-  // {
-  //   path:'',
-  //   component: 
-  // }
+// const routes : Routes = [
+//   // {
+//   //   path:'',
+//   //   component: 
+//   // }
   
-]
+// ]
 
 @NgModule({
   imports: [
