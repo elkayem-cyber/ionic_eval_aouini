@@ -24,3 +24,8 @@ describe('Tab2Page', () => {
     expect(component).toBeTruthy();
   });
 });
+export class ExampleComponent {
+  customCounterFormatter(inputLength: number, maxLength: number) {
+    return `${maxLength - inputLength} characters remaining`;
+  }
+}
