@@ -27,7 +27,7 @@ const routes: Routes = [
     loadChildren: () => import('./add-category/add-category.module').then( m => m.AddCategoryPageModule)
   },
   {
-    path: 'edit-category',
+    path: 'edit-category/:id',
     loadChildren: () => import('./edit-category/edit-category.module').then( m => m.EditCategoryPageModule)
   },
   {
